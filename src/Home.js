@@ -58,14 +58,14 @@ function Home() {
   }
 
   function calcularMedia() {
-    var stringCalculo = pessoas[0].age;
+    var stringCalculo = '( ' + pessoas[0].age;
     let soma = pessoas[0].age;;
     for (let i = 1; i < pessoas.length; i++) {
       stringCalculo = stringCalculo + ' + '  + pessoas[i].age;
       soma = soma + pessoas[i].age;
     }
 
-    stringCalculo = stringCalculo + ' / '  + pessoas.length + ' = ' + soma/pessoas.length;
+    stringCalculo = stringCalculo + ') / '  + pessoas.length + ' = ' + soma/pessoas.length;
     setRetorno(stringCalculo);
   }
 
